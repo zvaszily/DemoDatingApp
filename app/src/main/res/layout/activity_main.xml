@@ -8,13 +8,34 @@
     android:layout_height="match_parent"
     tools:context=".activity.MainActivity">
 
-    <ScrollView android:layout_width="match_parent"
+    <ScrollView
+        android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <hu.nye.demodatingapp.view.PersonDetailHeaderView
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/person_detail_header"/>
+            android:orientation="vertical">
+
+
+            <hu.nye.demodatingapp.view.PersonDetailHeaderView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/person_detail_header"/>
+
+            <ImageView
+                android:id="@+id/person_image"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:scaleType="centerCrop"
+                android:layout_margin="16dp"/>
+
+
+        </LinearLayout>
+
+
+
+
 
     </ScrollView>
 
