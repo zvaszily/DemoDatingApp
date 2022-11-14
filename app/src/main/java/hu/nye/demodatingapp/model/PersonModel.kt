@@ -15,7 +15,7 @@ data class PersonModel(
     companion object {
         fun Gandalf(): PersonModel {
             return PersonModel(
-                R.drawable.user_avatar,
+                R.drawable.gandalf3,
                 "Gyula",
                 4,
                 "Informatikus",
