@@ -9,7 +9,8 @@ data class PersonModel(
     val job: String,
     val formattedAge: String,
     val image: Int,
-    val introduction: String) {
+    val introduction: String,
+    val galleryImages: Array<Int>) {
 
     companion object {
         fun Gandalf(): PersonModel {
@@ -20,7 +21,8 @@ data class PersonModel(
                 "Informatikus",
                 "27 éves",
                 R.drawable.gandalf,
-                "Arra gondoltam, hogy valami jó olaszos kaja ki tudja hozni az emberek valódi énjét.\n\nSzóval... bedobhatnánk egy pizzát valamikor, szerintem az egészen király lenne.\n\nCiao!"
+                "Arra gondoltam, hogy valami jó olaszos kaja ki tudja hozni az emberek valódi énjét.\n\nSzóval... bedobhatnánk egy pizzát valamikor, szerintem az egészen király lenne.\n\nCiao!",
+                arrayOf(R.drawable.gandalf, R.drawable.gandalf1, R.drawable.gandalf2, R.drawable.gandalf3)
             )
         }
     }
